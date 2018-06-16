@@ -1,7 +1,7 @@
 @extends('layout.dashboard')
 
 @section('content')
-<dashboard inline-template :welcome-user="{{ $welcome_user ? 'true' : 'false' }}">
+<dashboard inline-template :welcome-user="{{ $welcomeUser ? 'true' : 'false' }}">
     <div>
         <div class="header">
             <div class="sidebar-toggler visible-xs">
@@ -21,7 +21,7 @@
             <div class="row">
               <div class="col-md-12">
                   <div class="section-components no-select">
-                      @if(!$component_groups->isEmpty() || !$ungrouped_components->isEmpty())
+                      @if(!$componentGroups->isEmpty() || !$ungroupedComponents->isEmpty())
                       @include('dashboard.partials.components')
                       @else
                       <ul class="list-group components">
@@ -89,7 +89,7 @@
                 @endif
             </div>
         </div>
-        @includeWhen($welcome_user, 'dashboard.partials.welcome-modal')
+        @includeWhen($welcomeUser, 'dashboard.partials.welcome-modal')
     </div>
 </dashboard>
 @stop
