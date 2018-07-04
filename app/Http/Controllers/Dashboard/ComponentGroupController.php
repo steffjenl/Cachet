@@ -24,7 +24,7 @@ use Illuminate\Support\Facades\View;
 /**
  * This is the component group controller class.
  *
- * @author James Brooks <james@bluebaytravel.co.uk>
+ * @author James Brooks <james@alt-three.com>
  */
 class ComponentGroupController extends Controller
 {
@@ -59,7 +59,7 @@ class ComponentGroupController extends Controller
 
         View::share([
             'sub_menu'  => $this->subMenu,
-            'sub_title' => trans_choice('dashboard.components.components', 2),
+            'subTitle'  => trans_choice('dashboard.components.components', 2),
         ]);
     }
 

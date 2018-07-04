@@ -28,7 +28,7 @@ You can now [join our Slack community!](http://cachethq-slack.herokuapp.com)
 
 ## Requirements
 
-- PHP 5.6.4+ or newer (PHP 7.2 is not currently supported)
+- PHP 7.1 or later
 - HTTP server with PHP support (eg: Apache, Nginx, Caddy)
 - [Composer](https://getcomposer.org)
 - A supported database: MySQL, PostgreSQL or SQLite
@@ -44,15 +44,6 @@ Here are some useful quick links:
 - [Installing Cachet on Windows](https://docs.cachethq.io/docs/installing-cachet-on-windows)
 
 ### Demo
-
-To test out the demo, you may login to the [Dashboard](https://demo.cachethq.io/dashboard) with the following:
-
-- **Username:** `test` or `test@test.com`
-- **Password:** `test123`
-
-> The demo resets every 30 minutes.
-
-### v2.4 Demo
 
 To test out the demo, you may login to the [Dashboard](https://dev.cachethq.io/dashboard) with the following:
 
