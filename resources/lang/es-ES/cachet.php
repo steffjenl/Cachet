@@ -14,7 +14,7 @@ return [
     'components' => [
         'last_updated' => 'Última actualización :timestamp',
         'status'       => [
-            0 => 'Desconocido',
+            0 => 'Unknown',
             1 => 'Operacional',
             2 => 'Problemas de rendimiento',
             3 => 'Interrupción parcial',
@@ -23,17 +23,19 @@ return [
         'group' => [
             'other' => 'Otros componentes',
         ],
+        'select_all'   => 'Select All',
+        'deselect_all' => 'Deselect All',
     ],
 
     // Incidents
     'incidents' => [
         'none'         => 'Ningún incidente reportado',
         'past'         => 'Incidencias anteriores',
-        'stickied'     => 'Incidentes anclados',
-        'scheduled'    => 'Mantenimiento programado',
+        'stickied'     => 'Stickied Incidents',
+        'scheduled'    => 'Maintenance',
         'scheduled_at' => ', programado para :timestamp',
-        'posted'       => 'Publicado :timestamp',
-        'posted_at'    => 'Publicado :timestamp',
+        'posted'       => 'Posted :timestamp',
+        'posted_at'    => 'Posted at :timestamp',
         'status'       => [
             1 => 'Investigando',
             2 => 'Identificado',
@@ -45,9 +47,9 @@ return [
     // Schedule
     'schedules' => [
         'status' => [
-            0 => 'Próximamente',
-            1 => 'En progreso',
-            2 => 'Completo',
+            0 => 'Upcoming',
+            1 => 'In Progress',
+            2 => 'Complete',
         ],
     ],
 
@@ -55,7 +57,7 @@ return [
     'service' => [
         'good'  => '[0,1]System operational|[2,*]All systems are operational',
         'bad'   => '[0,1] El sistema está actualmente experimentando problemas|[2,Inf] Algunos sistemas están experimentando problemas',
-        'major' => '[0,1] El servicio está experimentando una interrupción mayor | [2, Inf] Algunos sistemas están experimentando una interrupción mayor',
+        'major' => '[0,1]The system is experiencing major issues|[2,*]Some systems are experiencing major issues',
     ],
 
     'api' => [
@@ -75,14 +77,17 @@ return [
 
     // Subscriber
     'subscriber' => [
-        'subscribe'           => 'Suscríbete para obtener las actualizaciones más recientes',
-        'unsubscribe'         => 'Darse de baja',
+        'subscribe'           => 'Subscribe to status changes and incident updates',
+        'unsubscribe'         => 'Unsubscribe',
         'button'              => 'Suscríbete',
-        'manage_subscription' => 'Gestionar suscripción',
+        'manage_subscription' => 'Manage subscription',
         'manage'              => [
-            'no_subscriptions' => 'Actualmente estás suscrito a todas las actualizaciones.',
-            'my_subscriptions' => 'Actualmente estás suscrito a las siguientes actualizaciones.',
-            'manage_at_link'   => 'Administra tus suscripciones en :link',
+            'notifications'       => 'Notificaciones',
+            'notifications_for'   => 'Manage notifications for',
+            'no_subscriptions'    => 'Actualmente estás suscrito a todas las actualizaciones.',
+            'update_subscription' => 'Update Subscription',
+            'my_subscriptions'    => 'Actualmente estás suscrito a las siguientes actualizaciones.',
+            'manage_at_link'      => 'Manage your subscriptions at :link',
         ],
         'email' => [
             'subscribe'          => 'Suscríbete para recibir actualizaciones por correo electrónico.',

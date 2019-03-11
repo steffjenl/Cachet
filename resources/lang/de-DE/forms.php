@@ -156,9 +156,9 @@ return [
             'time_before_refresh'                   => 'Aktualisierungsrate der Statusseite (in Sekunden)',
             'major_outage_rate'                     => 'Grenzwert für schwerwiegende Ausfälle (in %)',
             'banner'                                => 'Banner Bild',
-            'banner-help'                           => 'Es wird empfohlen, dass Sie keine Dateien die breiter als 930 Pixel sind hochladen',
+            'banner-help'                           => 'Es wird empfohlen, dass Sie keine Dateien, die breiter als 930 Pixel sind, hochladen',
             'subscribers'                           => 'Personen die Anmeldung für E-Mail-Benachrichtigung erlauben?',
-            'suppress_notifications_in_maintenance' => 'Unterdrücken Sie Benachrichtigungen, wenn ein Vorfall während des Zeitraum der Wartungsarbeiten auftritt?',
+            'suppress_notifications_in_maintenance' => 'Möchten Sie Benachrichtigungen über einen Vorfall während des Zeitraumes der Wartungsarbeiten unterdrücken?',
             'skip_subscriber_verification'          => 'Verifizierung der Nutzer überspringen? (Warnung, du könntest gespammt werden)',
             'automatic_localization'                => 'Die Status-Seite automatisch auf die Sprache deiner Besucher anpassen?',
             'enable_external_dependencies'          => 'Drittanbieter Abhängigkeiten erlauben (Google Schriftarten, Tracker, etc...)',
@@ -221,7 +221,7 @@ return [
         ],
         'team' => [
             'description' => 'Invite your team members by entering their email addresses here.',
-            'email'       => 'Email #:id',
+            'email'       => 'Die E-Mail Adresse deines Teammitgliedes',
         ],
     ],
 

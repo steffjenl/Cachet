@@ -31,7 +31,7 @@ return [
             ],
             'edit' => [
                 'title'   => 'Vorfall Update bearbeiten',
-                'success' => 'Vorfall Update wurde aktualisiert.',
+                'success' => 'Vorfall wurde aktualisiert.',
                 'failure' => 'Etwas ist mit dem Aktualisieren des Vorfall Updates schief gelaufen',
             ],
         ],
@@ -78,13 +78,13 @@ return [
         'logged'       => '{0}Es gibt keine geplanten Wartungen, gute Arbeit.|[1]Du hast einen Eintrag erstellt.|[2,*]Du hast <strong>:count</strong> Einträge erstellt.',
         'scheduled_at' => 'Geplant am :timestamp',
         'add'          => [
-            'title'   => 'Planmäßige Wartungsarbeiten hinzufügen',
+            'title'   => 'Wartungsarbeiten hinzufügen',
             'success' => 'Wartungsarbeiten hinzugefügt.',
             'failure' => 'Etwas lief schief mit dem Hinzufügen des Zeitplans. Bitte versuchen Sie es erneut.',
         ],
         'edit' => [
             'title'   => 'Planmäßige Wartung bearbeiten',
-            'success' => 'Zeitplan wurde aktualisiert!',
+            'success' => 'Wartungsarbeiten wurden aktualisiert!',
             'failure' => 'Etwas lief schief mit dem Editieren des Zeitplans. Bitte versuchen Sie es erneut.',
         ],
         'delete' => [
@@ -163,7 +163,7 @@ return [
         'not_verified'         => 'Nicht Bestätigt',
         'subscriber'           => ':email, abonniert am :date',
         'no_subscriptions'     => 'Aktualisierungen per E-Mail abonnieren',
-        'global'               => 'Pauschal abonniert',
+        'global'               => 'Alles abonniert',
         'add'                  => [
             'title'   => 'Einen neuen Abonnenten hinzufügen',
             'success' => 'Abonnent hinzugefügt.',

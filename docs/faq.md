@@ -16,7 +16,7 @@ Psy Shell v0.8.8 (PHP 7.1.6 — cli) by Justin Hileman
 => CachetHQ\Cachet\Models\User {#865
     id: 1,
     username: "test",
-    email: "test@test.com",
+    email: "test@example.com",
     api_key: "9yMHsdioQosnyVK4iCVR",
     active: 1,
     level: 1,
@@ -62,7 +62,7 @@ promise that your support request will be dealt with immediately.
 ### Why isn't the _Subscribe_ button enabled?
 
 Cachet checks some informations before displaying the _Subscribe_ button,
-because checking the "Enable subscribers" is not enough.  
+because checking the "Enable subscribers" is not enough.
 To see the _Subscribe_ button you need to:
 
 - Check the box "Enable subscribers" in the settings.

@@ -23,16 +23,18 @@ return [
         'group' => [
             'other' => 'Andre komponenter',
         ],
+        'select_all'   => 'Select All',
+        'deselect_all' => 'Deselect All',
     ],
 
     // Incidents
     'incidents' => [
-        'none'         => 'Ingen hendelser å rapportere',
+        'none'         => 'Ingen hendelser rapportert',
         'past'         => 'Tidligere hendelser',
-        'stickied'     => 'Stickied hendelser',
-        'scheduled'    => 'Planlagt vedlikehold',
+        'stickied'     => 'Festede hendelser',
+        'scheduled'    => 'Maintenance',
         'scheduled_at' => ', planlagt :timestamp',
-        'posted'       => 'Skrevet :timestamp',
+        'posted'       => 'Postet :timestamp',
         'posted_at'    => 'Posted at :timestamp',
         'status'       => [
             1 => 'Undersøkes',
@@ -54,8 +56,8 @@ return [
     // Service Status
     'service' => [
         'good'  => '[0,1]System operational|[2,*]All systems are operational',
-        'bad'   => '[0,1] Systemet har problemer| [2, Inf] Noen systemer har problemer',
-        'major' => '[0,1] Det er et større brudd i systemet| [2, Inf] Noen systemer har større brudd',
+        'bad'   => '[0,1]The system is experiencing issues|[2,*]Some systems are experiencing issues',
+        'major' => '[0,1]The system is experiencing major issues|[2,*]Some systems are experiencing major issues',
     ],
 
     'api' => [
@@ -75,22 +77,25 @@ return [
 
     // Subscriber
     'subscriber' => [
-        'subscribe'           => 'Abonner for å få de siste oppdateringene',
+        'subscribe'           => 'Subscribe to status changes and incident updates',
         'unsubscribe'         => 'Unsubscribe',
         'button'              => 'Abonner',
         'manage_subscription' => 'Manage subscription',
         'manage'              => [
-            'no_subscriptions' => 'Du abonnerer for øyeblikket på alle oppdateringer.',
-            'my_subscriptions' => 'Du abonnerer for øyeblikket på følgende oppdateringer.',
-            'manage_at_link'   => 'Manage your subscriptions at :link',
+            'notifications'       => 'Notifications',
+            'notifications_for'   => 'Manage notifications for',
+            'no_subscriptions'    => 'Du abonnerer for øyeblikket på alle oppdateringer.',
+            'update_subscription' => 'Update Subscription',
+            'my_subscriptions'    => 'Du abonnerer for øyeblikket på følgende oppdateringer.',
+            'manage_at_link'      => 'Manage your subscriptions at :link',
         ],
         'email' => [
-            'subscribe'          => 'Abonner for å motta varslinger på e-post.',
-            'subscribed'         => 'Du har abbonerer nå på epostvarslinger, sjekk din e-post for å bekrefte abboneringen.',
+            'subscribe'          => 'Abonner på e-postoppdateringer.',
+            'subscribed'         => 'Du abonnerer nå på e-postvarslinger, sjekk din e-post for å bekrefte abonneringen.',
             'verified'           => 'Ditt epost abonnement er bekreftet!',
             'manage'             => 'Administrer ditt abonnement',
-            'unsubscribe'        => 'Meld av epostvarsling.',
-            'unsubscribed'       => 'Din epostvarsling har blitt kansellert.',
+            'unsubscribe'        => 'Meld av e-postvarsling.',
+            'unsubscribed'       => 'Ditt e-postabonnement har blitt kansellert.',
             'failure'            => 'Noe gikk galt med abonneringen.',
             'already-subscribed' => 'Kan ikke abonnere: email fordi de allerede er abonnenter.',
         ],
@@ -114,7 +119,7 @@ return [
         'close'     => 'Lukk',
         'subscribe' => [
             'title'  => 'Abonner for å motta varslinger for komponenten på e-post',
-            'body'   => 'Skriv inn epostadressen din for å abonnere på varslinger for denne komponenten. Hvis du allerede er abonnent vil alt fortsette som før.',
+            'body'   => 'Enter your email address to subscribe to updates for this component. If you\'re already subscribed, you\'ll already receive emails for this component.',
             'button' => 'Abonner',
         ],
     ],
@@ -130,8 +135,8 @@ return [
     ],
 
     // Other
-    'home'            => 'Forsiden',
-    'powered_by'      => 'Drevet av <a href="https://cachethq.io" class="links"> Cachet</a>.',
+    'home'            => 'Home',
+    'powered_by'      => 'Powered by <a href="https://cachethq.io" class="links">Cachet</a>.',
     'timezone'        => 'Tider vises i :timezone.',
     'about_this_site' => 'Om denne siden',
     'rss-feed'        => 'RSS',
